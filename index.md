@@ -8,8 +8,6 @@ templateEngineOverride: njk, md
 안녕하세요, <br>
 zettel-developer 입니다.
 
-
-
 ## 소개
 
 아침이슬을 그리워하는 사막모래입니다.

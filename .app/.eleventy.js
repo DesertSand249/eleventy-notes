@@ -25,5 +25,8 @@ module.exports = (eleventyConfig) => {
 
   core.setup(eleventyConfig);
 
-  return core.configObj;
+  return {
+    ...core.configObj,
+    pathPrefix: "/",
+  };
 };
