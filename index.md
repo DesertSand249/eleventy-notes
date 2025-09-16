@@ -1,23 +1,27 @@
 ---
 title: Home
-headline: Welcome to Eleventy Notes
-panel: false
+panel: true
+featuredNotes: ... # filter omitted for brevity
+templateEngineOverride: njk, md
 ---
 
-Welcome to **Eleventy Notes**, an opinionated template for publishing your personal notes, documentation, or even your blog! Built with [Eleventy](https://11ty.dev/), the powerful static site generator, Eleventy Notes is packed with features you'll love.
+안녕하세요, <br>
+zettel-developer 입니다.
 
-With Eleventy Notes, you can:
 
-- ✅ Create [[Wikilinks]] and backlinks to easily navigate your content
-- ✅ Organize your content with [[Tags]] for easy searching and filtering
-- ✅ Quickly find what you need with a [[Search|client-side search]]
-- ✅ Choose from two [[Themes]] and multiple color schemes to match your style
-- ✅ Customize your [[Sidebar]] with support for folders and subfolders
-- ✅ Enjoy a lightweight and fast experience, with minimal JavaScript
-- ... and much more!
 
-Whether you're a blogger, developer, or just someone who loves to write, Eleventy Notes has everything you need to publish your content. So what are you waiting for? Get started today by reading our [[Getting started]] guide and start sharing your thoughts with the world!
+## 소개
 
----
+아침이슬을 그리워하는 사막모래입니다.
 
-Built with ❤️ by [Sandro Roth](https://sandroroth.com/)
+## 읽기 가이드
+
+세 가지의 폴더가 존재합니다.<br>
+일정한 포맷으로 글이 작성되고 있습니다.
+
+## PROJECT
+
+{{ collections.notes | query(featuredNotes) | renderAsList | safe }}
+
+## AREA
+
